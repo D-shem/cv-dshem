@@ -1,32 +1,169 @@
 html
 
+
 body {
 	margin: 25;
 	padding: 0;
-	background-color: white;
+	background-color:#E0FFFF;
 	font-family: Verdana, sans-serif;
 	font-size: 85%;
 }
+header img{
+	margin: 55px;
+	opacity: 0.5;
+	align-self: center:top; 
+	 width: 40%;
+    display: table-cell;
+    position:absolute;top:0px;right:450px;
 
+}
 h1 {
-	color:navy;
+	color: black;
 	text-align: center;
+}
+
+#informations, #information ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:left;
+}
+
+#informations li{
+display:inline-block;
+position:relative;
+border-radius:15px 15px 0 0;
+}
+#informations ul li{
+display:inline-block;
+border-radius:0;
+}
+#informations ul li:hover{
+border-radius:0;
+}
+#informations ul li:last-child{
+border-radius:0 0 15px 15px;
+}
+
+#informations ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+}
+
+#informations li:hover ul{
+max-height:15em;
+}
+/* background des liens menus */
+#informations li:first-child{
+background-color: #65537A;
+background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
+background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+}
+#informations li:nth-child(2){
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+#informations li:nth-child(3){
+background-color: #F6AD1A;
+background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #9F391A 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+}
+#informations li:last-child{
+background-color: #CFFF6A;
+background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+/* background des liens sous menus */
+#informations li:first-child li{
+background:#2A2333;
+}
+#informations li:nth-child(2) li{
+background:#333A40;
+}
+#informations li:nth-child(3) li{
+background:#9F391A;
+}
+#informations li:last-child li{
+background:#677F35;
+}
+/* background des liens menus et sous menus au survol */
+#informations li:first-child:hover, #informations li:first-child li:hover{
+background:#65537A;
+}
+#informations li:nth-child(2):hover, #informations li:nth-child(2) li:hover{
+background:#729EBF;
+}
+#informations li:nth-child(3):hover, #informations li:nth-child(3) li:hover{
+background:#F6AD1A;
+}
+#informations li:last-child:hover, #informations li:last-child li:hover{
+background:#CFFF6A;
+}
+/* les a href */
+#informations a{
+text-decoration:none;
+display:block;
+padding:8px 150px;
+color:#fff;
+font-family:arial;
+}
+#informations ul a{
+padding:8px 0;
+}
+#informations li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#informations li:hover a, #informations li li:hover a{
+color:#000;
+}
+
+.situation{
+	color: black;
+}
+
+.atouts{
+	color: black;
+    
+  }
+
+
+
+.loisirs{
+	color: black;
+}
+
+.formations{
+	color: black;
 }
 
 
 .informations{
-	border-width: 2px;
+ color: black;
+border-width: 2px;
  border-style: solid;
  border-color: black;
 }
 
-.compentences{
-      text-align: center;
-      vertical-align: top;
+.competences{
+    color: black;
+    text-align: center;
+    position:;top:0px;right:400px;
+
+
 }
 
 
 .maconnerie{
+	color: black;
 	text-align: center;
 }
 
